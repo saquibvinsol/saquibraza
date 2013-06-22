@@ -1,0 +1,148 @@
+
+
+    Q.1 Create a repository
+  
+    Ans. git int
+
+    Q.2 Make some changes -- add some files, change content of some files
+
+    Ans. cat > md.txt
+         write( vinsol works on ruby on rails) ctrl D
+ 
+         cat >> md.txt
+         write( It also works on ios)  ctrl D
+
+     Q.3 commit changes
+
+     Ans. git commit -m "commited"
+
+     Q.5 create changes and revert those changes using git when those changes are not added to staging are         
+  
+     Ans. chages made (added: vinsol is in patel nagar)
+          then
+          git checkout -- md.txt
+
+      Q.6 create changes and revert those changes after adding changes to staging area
+
+      Ans. changes made
+            then
+             git add md.txt
+             git reset HEAD
+
+       Q.7 create change and revert those changes after committing those changes .
+ 
+       Ans. changes made
+             then 
+             git add md.txt
+              git commit -m "commited"
+               git reset --hard HEAD^
+
+       Q.8 Check repository status before adding changes to staging area, after adding changes to staging area and after committing changes . 
+
+        Ans. git status
+              git add md.txt
+                git status
+                 git commit -m "commited"
+                  git status
+
+         Q.9 Display all the commits
+
+         Ans. git log
+
+         Q.10 Display a specific commit .
+
+          Ans. git log <hash>
+                i.e. git log fae4034bc5fb7b04ef4292f4a7d43dcda65f56fb
+
+         Q.11 create branches called "feature1" and "feature2" from master. 11 . Delete branch "feature2".
+
+          Ans. git branch feature1
+                git branch feature2
+                 git branch -d feature2
+
+          Q.12 Make some commits on "feature1".
+
+           Ans. git checkout feature1
+                 cat >> md.txt and make some changes then
+                  git add md.txt
+                  git commit -m "commited"
+
+           Q.13 Make some commits on branch "master".
+
+           Ans. git checkout master
+                 cat >> md.txt and make some changes then
+                 git add md.txt
+                 git commit -m "commited"
+
+           Q.14 merge branch "feature1" in "master" (make some conflicts by changing same file on same line in both the branches)
+
+             Ans. git merge feature1
+
+
+           Q.15 create branch "feature2" from master and make some commits on "feature2".
+
+            Ans. git branch feature2 (branch created)
+                 git checkout feature2 (switch to feature2)
+                 cat >> md.txt and make some changes 
+                    git add md.txt
+                     git commit -m "commited"
+
+            Q.16 Make some commits on branch "master".
+
+            Ans. git checkout master
+                  cat >> md.txt and make some changes
+                   git add md.txt
+                    git commit -m "commited"
+
+            Q.17 rebase branch "master" in "feature2" (make some conflicts by changing same file on same line in both the branches) .
+
+             Ans.    git checkout master
+                     cat >> md.txt and make some changes
+                     git add md.txt
+                     gti commit -m "commited"
+                     git checkout feature2
+                     cat >> md.txt and make some changes
+                     git add md.txt
+                     git commit -m "commited"
+                     git rebase master
+
+             Q.18 find the differences between "merge" and "rebase" in above cases
+
+              Ans. while conflict there is temp (no branch) created on which all the changes of master are applied and then of feature2
+on merging to master it creates a fast forward.
+
+              Q.19 Use git stash
+
+              Ans. git checkout master
+                    cat >> md.txt and make changes
+                    git stash
+                    git checkout feature1
+                    cat md.txt(changes not shown)
+                    git chechout master
+                    git stash apply
+                    git checkout feature1
+                    cat md.txt(changes shown)
+                    
+
+               Q.20 create a repository on github for your working repository and push changes on remote repository.
+
+               Ans.Go to github.com
+                    set username and password
+                   //configuration
+                    git config --global user.name <xyz>
+                    git config --global user.email <abc@gmail.com>
+                   // to add remotes
+                   git remote add <remote name> <repository url>
+                   //push
+                   git push -u <remote name> <branch name>
+
+ 
+  
+                    
+              
+              
+  
+                  
+
+         
+
