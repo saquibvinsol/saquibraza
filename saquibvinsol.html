@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title> my first exercise</title>
+  </head>
+  <body style="background-color:#E0E0E0;margin:0 auto; width:60%;">
+    <form name="input" action="html_form_action.asp" method="get">
+      <h1 align="center">HTML form exercise</h1>
+      <p> <font color="red">Please note:</font>
+       This Example demonstrate how HTML forms can b used. Submit button should submit the button and reset button should     							  reset the form (revert the changes in form fields). The form layout should be the same as below.</p>
+      <small><h2>Contact form</h2></small>
+        <table border="0">
+          <tr>
+            <td >Your name*:</td><td> <input type="text" name="username" size="30"></td>
+          </tr>
+          <tr>
+            <td>E-mail*: </td><td>     <input type="text" name="e-mail" size="30" style="background- color:yellow"></td>
+          </tr>
+          <tr>
+            <td>Phone number</td><td>  <input type="text" name="phone number" size="30"style="background-color:yellow"></td>
+          </tr>
+          <tr>
+            <td>Website*:  </td><td>   <input type="text" name="website" size="40" value="http://"></td>
+          </tr>
+        </table>
+        <p>Comments*:</p>
+          <textarea rows="10" cols="60" name="comments"></textarea>
+      <small><h2>Text field</h2></small>
+        Your name:<input type="text" name="name" size="30"style="background-color:yellow">
+      <small><h2>Password field</h2></small>  
+        Password:<input type="password" name="password" size="30">
+      <small><h2>Radio buttons</h2></small>
+        Do you like pizza?
+          <p><input type="radio" value="yes" name="group" id="1"><label for="1">Yes</label></p>
+          <p><input type="radio" value="No" name="group"id="2"><label for="2">No</label></p>
+          <p><input type="radio" value="Maybe" name="group"id="3"><label for="3">Maybe</label></p>
+          <p><input type="radio" value="Never tried" name="group"id="4"><label for="4">Never tried</label></p>
+      <small><h2>Check Box</h2></small>
+        <p><input type="checkbox"id="5"><label for="5">Check this box if you like our service</label></p>
+      <small><h2>Text area</h2></small>
+        <p>Anything you would like to say?</p>
+          <textarea name ="you said"rows="5" cols="50"id="6"></textarea>
+      <small><h2>I Like</h2></small>
+        <select size="5">
+          <option name="you liked"value="mushrooms">mushrooms</option>
+          <option name="you liked"value="green peppers">green peppers</option>
+          <option name="you liked"value="onions">onions</option>
+          <option name="you liked"value="tomatoes">tomatoes</option>
+          <option name="you liked"value="olives">olives</option>
+        </select>
+      <small><h2>Menu</h2></small>
+        your favorite color 
+          <select>
+            <option name="your favorite color is"value="red">red</option>
+            <option name="your favorite color is"value="green">green</option>
+            <option name="your favorite color is"value="orange">orange</option>
+            <option name="your favorite color is"value="blue">blue</option>
+            <option name="your favorite color is"value="pink">pink</option>
+          </select>
+      <small><h2>Attach file</h2></small>
+        <p><input type="file" ></p>
+      <small><h2>Buttons</h2></small>
+        <input type="submit" value="Submit">  
+        <input type="reset" value="Reset">
+
+  </body>
+</html>
