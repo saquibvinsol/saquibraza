@@ -1,8 +1,5 @@
 
-
-
-
-#ul1 {display:inline-block;margin:0px;padding:0px;}
+      #ul1 {display:inline-block;margin:0px;padding:0px;}
       #ul1 li{display: inline-block;position:relative;}
       #ul1 li a{
                  font-family: georgia;
@@ -13,7 +10,8 @@
                  background-color: #CFCFCF;
                  color: black;
                  margin-left: 2px;
-                 height: 37px;
+                 padding-top:8px;
+                 padding-bottom:7px;
                  border-bottom:#6d6d6d;
                  text-decoration: none;
                  
@@ -22,29 +20,30 @@
       #ul1 li:hover a{
                        color: #8c8c8c;
                        background-color: white;
+			padding:0px;
                        padding-left: 20px;
                        padding-right: 20px;
                        font-size: 18px;
                        font-family: georgia;
                        font-style:Italic;
                        border:solid 1px black;
-                       border-bottom: none;
+                       border-bottom: solid 1px black;
                        margin-left:0px;
-                       
-                         
-                       
+                       padding-top:8px;
+                       padding-bottom:7px;
                      }
       #ul1 li:hover ul{display:block;width:189px;border: solid 1px #6d6d6d;padding: 10px;background-color: white;border-top:none;}
-      #ul1 li:hover ul li { border-bottom: solid 1px #cfcfcf;border-top:none;   padding-top: 5px;padding-bottom: 5px;}
+      #ul1 li:hover ul li { border-top:none; }
       #ul1 li:hover ul li a{
-                           
+                             display:inline-block;
                              font-size: 14px;
                              color: black;
                              font-family: georgia;
                              border-left: none;
                              border-top: none;
                              border-right: none;
-                             border-bottom:#cfcfcf;
+                             border-bottom:solid 1px #cfcfcf;
+                             width : 155px;padding-top: 5px;padding-bottom: 5px;padding-left: 0px;
 
                              
                            }
@@ -56,12 +55,11 @@
                                    padding-top:5px;
                                    padding-bottom:5px;
                                    padding-left:none;
-                                   padding-right:none;  
+                                   padding-right:none;
                                    text-decoration:none;
                                    color: #bd0707;
                                    
                                    
                                  }
      
-      #ul1 li ul li:last-child{	border-bottom:none;}
-    
+      #ul1 li:hover #spec{	border-bottom:none;}
